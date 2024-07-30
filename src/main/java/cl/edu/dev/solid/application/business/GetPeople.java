@@ -1,4 +1,4 @@
-package cl.edu.dev.solid.application;
+package cl.edu.dev.solid.application.business;
 
 import cl.edu.dev.solid.model.Person;
 import cl.edu.dev.solid.repository.PersonRepository;
@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class GetAllPersons {
+public class GetPeople {
     private final PersonRepository personRepository;
 
-    GetAllPersons ( PersonRepository personRepository ) {
+    GetPeople(PersonRepository personRepository ) {
         this.personRepository = personRepository;
     }
 

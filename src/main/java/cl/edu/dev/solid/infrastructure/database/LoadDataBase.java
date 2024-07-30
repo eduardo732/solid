@@ -1,4 +1,4 @@
-package cl.edu.dev.solid.config.database;
+package cl.edu.dev.solid.infrastructure.database;
 
 import cl.edu.dev.solid.model.Person;
 import cl.edu.dev.solid.repository.PersonRepository;
