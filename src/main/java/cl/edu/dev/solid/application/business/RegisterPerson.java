@@ -1,5 +1,6 @@
-package cl.edu.dev.solid.application;
+package cl.edu.dev.solid.application.business;
 
+import cl.edu.dev.solid.application.exception.AlreadyExistsException;
 import cl.edu.dev.solid.model.Person;
 import cl.edu.dev.solid.repository.PersonRepository;
 import org.springframework.stereotype.Service;
@@ -13,6 +14,12 @@ public class RegisterPerson {
     }
 
     public Long save(Person person) {
+        isPersonAlreadyExists(person);
         return this.personRepository.save(person).getId();
+    }
+
+    private void isPersonAlreadyExists(Person person) throws AlreadyExistsException {
+        if(this.personRepository.existsById(person.getId()))
+            throw new AlreadyExistsException("C-409", person.getId());
     }
 }

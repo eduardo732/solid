@@ -1,5 +1,6 @@
-package cl.edu.dev.solid.application;
+package cl.edu.dev.solid.application.business;
 
+import cl.edu.dev.solid.application.exception.NotFoundException;
 import cl.edu.dev.solid.model.Person;
 import cl.edu.dev.solid.repository.PersonRepository;
 import org.springframework.stereotype.Service;
@@ -12,8 +13,8 @@ public class FindPerson {
         this.personRepository = personRepository;
     }
 
-    //TODO:add controlleradvice to manage exceptions and here is or throw notFound
     public Person byId(Long id) {
-        return this.personRepository.findById(id).orElse(null);
+        return this.personRepository.findById(id)
+                .orElseThrow(() -> new NotFoundException("C-404", id));
     }
 }

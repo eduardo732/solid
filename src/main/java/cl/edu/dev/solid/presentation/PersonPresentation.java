@@ -1,8 +1,8 @@
 package cl.edu.dev.solid.presentation;
 
-import cl.edu.dev.solid.application.FindPerson;
-import cl.edu.dev.solid.application.GetAllPersons;
-import cl.edu.dev.solid.application.RegisterPerson;
+import cl.edu.dev.solid.application.business.FindPerson;
+import cl.edu.dev.solid.application.business.GetPeople;
+import cl.edu.dev.solid.application.business.RegisterPerson;
 import cl.edu.dev.solid.model.Person;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,16 +12,16 @@ import java.util.List;
 @RequestMapping("/v1/person")
 public class PersonPresentation {
     private final FindPerson findPerson;
-    private final GetAllPersons getAllPersons;
+    private final GetPeople getPeople;
     private final RegisterPerson registerPerson;
 
     public PersonPresentation(
             FindPerson findPerson,
-            GetAllPersons getAllPersons,
+            GetPeople getPeople,
             RegisterPerson registerPerson
     ) {
         this.findPerson = findPerson;
-        this.getAllPersons = getAllPersons;
+        this.getPeople = getPeople;
         this.registerPerson = registerPerson;
     }
 
@@ -32,7 +32,7 @@ public class PersonPresentation {
 
     @GetMapping
     public List<Person> getAll() {
-        return this.getAllPersons.findAll();
+        return this.getPeople.findAll();
     }
 
     @PostMapping
