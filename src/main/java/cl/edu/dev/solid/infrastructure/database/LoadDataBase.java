@@ -1,7 +1,7 @@
 package cl.edu.dev.solid.infrastructure.database;
 
 import cl.edu.dev.solid.model.Person;
-import cl.edu.dev.solid.repository.PersonRepository;
+import cl.edu.dev.solid.infrastructure.repository.PersonRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

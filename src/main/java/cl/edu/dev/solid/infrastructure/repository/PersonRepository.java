@@ -1,4 +1,4 @@
-package cl.edu.dev.solid.repository;
+package cl.edu.dev.solid.infrastructure.repository;
 
 import cl.edu.dev.solid.model.Person;
 import org.springframework.data.jpa.repository.JpaRepository;

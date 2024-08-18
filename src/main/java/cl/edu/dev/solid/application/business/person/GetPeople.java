@@ -1,7 +1,7 @@
-package cl.edu.dev.solid.application.business;
+package cl.edu.dev.solid.application.business.person;
 
 import cl.edu.dev.solid.model.Person;
-import cl.edu.dev.solid.repository.PersonRepository;
+import cl.edu.dev.solid.infrastructure.repository.PersonRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,8 +1,8 @@
 package cl.edu.dev.solid.presentation;
 
-import cl.edu.dev.solid.application.business.FindPerson;
-import cl.edu.dev.solid.application.business.GetPeople;
-import cl.edu.dev.solid.application.business.RegisterPerson;
+import cl.edu.dev.solid.application.business.person.FindPerson;
+import cl.edu.dev.solid.application.business.person.GetPeople;
+import cl.edu.dev.solid.application.business.person.RegisterPerson;
 import cl.edu.dev.solid.model.Person;
 import org.springframework.web.bind.annotation.*;
 
