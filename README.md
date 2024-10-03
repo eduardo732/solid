@@ -17,9 +17,9 @@ Este proyecto tiene como objetivo demostrar la aplicación de los principios SOL
 
 ## Endpoints
 Persona
-GET /person: Obtiene todos las personas.
-GET /person/{id}: Obtiene una persona por ID.
-POST /person: Registra una persona.
+GET /user: Obtiene todos las personas.
+GET /user/{id}: Obtiene una persona por ID.
+POST /user: Registra una persona.
 
 ## Principios SOLID en la API
 ### Single Responsibility Principle (SRP)
