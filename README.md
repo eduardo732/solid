@@ -1,4 +1,3 @@
-# SOLID Principles API
 ## Descripción
 Este proyecto tiene como objetivo demostrar la aplicación de los principios SOLID en el desarrollo de una API REST utilizando Java 17, Spring Boot y Maven. Los principios SOLID son fundamentales para crear código limpio, mantenible y escalable.
 
